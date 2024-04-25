@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=0">
+        <title>Python Mommy</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="firstSection">
+                    <div class="header">
+                        <div class="logo">
+                            Python Mommy
+                        </div>
+
+
+                        <section class="top-nav">
+                            <input id="menu-toggle" type="checkbox" />
+                            <label class='menu-button-container' for="menu-toggle">
+                                <div class='menu-button'></div>
+                            </label>
+                            <ul class="menu">
+                                <li>
+                                    <a href="#secondSection" class="about">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="#team" class="contacts">Наша команда</a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="team_menu">Контакты</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <div class="account">
+                            <div class="personPhoto">
+                                <img src="img/userPhoto.jpg" alt="">
+                            </div>
+                            <div class="namePerson" default="Guest">nickname</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="contactForm">
+                            <img src="img/userPhoto.jpg" alt="" class="avatar">
+                            <h2>Вход</h2>
+                            <form action="index.html">
+                                <p>Почта</p>
+                                <input type="email" placeholder="Почта">
+                                <p>Пароль</p>
+                                <input type="password" placeholder="Пароль">
+                                <input type="submit" value="Войти">
+                                <button class="newSubmit" >
+                                    <a href="#" id="open_pop_up">Зарегестрироваться</a>
+                                </button>
+                                <p><input type="checkbox">Запомнить меня</p>
+                            </form>
+                        </div>
+
+                        <div class="pop_up" id="pop_up">
+                            <div class="pop_up_container">
+                                <div class="pop_up_body" id="pop_up_body">
+                                    <img src="img/userPhoto.jpg" alt="" class="avatar">
+                                    <h2>Регистрация</h2>
+                                    <form action="index.html" name="f1">
+                                        <p>Почта</p>
+                                        <input type="email" placeholder="Почта">
+                                        <p>Пароль</p>
+                                        <input type="password" placeholder="Пароль">
+                                        <p>Повторите пароль</p>
+                                        <input type="password" placeholder="Повторите пароль">
+                                        <button class="getIn" >Зарегестрироваться</button>
+                                    </form>
+                                    <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Introduction">
+                            Python Mommy подготовит 
+                            <br>к собеседованию и не только...
+                        </div>
+                        <div class="fun">
+                            <br>Интересное развлечение на вечер.
+                            <br>Твои руки будут заниматься разным)
+                        </div>
+                    </div>
+            </div>
+            <div class="secondSection" id="secondSection">
+                <div class="carousel">
+                    <div class="progress-bar progress-bar--primary hide-on-desktop">
+                        <div class="progress-bar__fill"></div>
+                    </div>
+                
+                    <header class="main-post-wrapper">
+                    
+                        <div class="slides">
+                            <article class="main-post main-post--active">
+                                <div class="main-post__image">
+                                    <img src="img/Фича1.jpg" alt="" />
+                                </div>
+                                <div class="main-post__content">
+                                    <div class="main-post__tag-wrapper">
+                                        <span class="main-post__tag">Фишки</span>
+                                    </div>
+                                    <h1 class="main-post__title">Генерация персонального учителя</h1>
+                                    <h3 class="main-post__text">Каждый человек требует к себе индивидуальный подход, поэтому в основу PythonMommy легла идея в создании персонального учителя - Вы вольны выбрать его стиль речи, темперамент и даже внешний вид!
+                                        <br>Вашим преподавателем может быть как накачанный темнокожий мужчина крепкого телосложения, так и милая девушка.
+                                        <br>Все ради Вашего комфорта!</h3>
+                                    <a class="main-post__link" href="#">
+                                        <span class="main-post__link-text">И это не всё</span>
+                                        <svg class="main-post__link-icon main-post__link-icon--arrow" width="37" height="12" viewBox="0 0 37 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="main-post main-post--not-active">
+                                <div class="main-post__image">
+                                    <img src="img/фича2.jpg" alt="" />
+                                </div>
+                                <div class="main-post__content">
+                                    <div class="main-post__tag-wrapper">
+                                        <span class="main-post__tag">Фишки</span>
+                                    </div>
+                                    <h1 class="main-post__title">Проверка ответов на задачи при помощи нейронок</h1>
+                                    <h3 class="main-post__text">Цель PythonMommy не заставить Вас вызубрить правильные ответы на вопросы, а научить Вас понимать темы и разбираться в них. 
+                                        <br>Поэтому мы разработали специальный алгоритм, который позволяет вычленять главную суть из Ваших ответов, независимо от того, какими словами Вы их описали. 
+                                        <br>Ведь главное - смысл, а не то, как он описан!</h3>
+                                    <a class="main-post__link" href="#">
+                                        <span class="main-post__link-text">И это не всё</span>
+                                        <svg class="main-post__link-icon main-post__link-icon--arrow" width="37" height="12" viewBox="0 0 37 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="main-post main-post--not-active">
+                                <div class="main-post__image">
+                                    <img src="img/фича3.jpg" alt="" />
+                                </div>
+                                <div class="main-post__content">
+                                    <div class="main-post__tag-wrapper">
+                                        <span class="main-post__tag">Фишки</span>
+                                    </div>
+                                    <h1 class="main-post__title">Генерация голоса на выбор по любому тексту</h1>
+                                    <h3 class="main-post__text">
+                                        <br>В награду за ваши старания PythonMommy разрешит Вам немного поиграть с ее функционалом. Например, Вы можете отправить ей желаемый текст, выбрать одного из спикеров, и вуаля!
+                                        <br>Голосовое сообщение с нежным голоском девушки или брутальным мужским голосом уже в Вашем чате.
+                                        <br>Развлекайтесь, как душе угодно! 
+                                    </h3>
+                                    <a class="main-post__link" href="#">
+                                        <span class="main-post__link-text">И это не всё</span>
+                                        <svg class="main-post__link-icon main-post__link-icon--arrow" width="37" height="12" viewBox="0 0 37 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="main-post main-post--not-active">
+                                <div class="main-post__image">
+                                    <img src="img/фича4.jpg" alt="" />
+                                </div>
+                                <div class="main-post__content">
+                                    <div class="main-post__tag-wrapper">
+                                        <span class="main-post__tag">Фишки</span>
+                                    </div>
+                                    <h1 class="main-post__title">Отвечать на вопросы можно голосовыми</h1>
+                                    <h3 class="main-post__text">Ответ на вопросы к собеседованиям предусмотрен и в формате голосового сообщения - просто проговариваете ответ, а мы разбираем Ваше голосовое сообщение на текст и работаем с ним.
+                                        <br>Безумно удобно! </h3>
+                                    <a class="main-post__link" href="#">
+                                        <span class="main-post__link-text">И это не всё</span>
+                                        <svg class="main-post__link-icon main-post__link-icon--arrow" width="37" height="12" viewBox="0 0 37 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="main-post main-post--not-active">
+                                <div class="main-post__image">
+                                    <img src="img/фича5.jpg" alt="" />
+                                </div>
+                                <div class="main-post__content">
+                                    <div class="main-post__tag-wrapper">
+                                        <span class="main-post__tag">Фишки</span>
+                                    </div>
+                                    <h1 class="main-post__title">Постоянные обновления и улучшения платформы</h1>
+                                    <h3 class="main-post__text">В проекте постоянно появляются новые фишки и улучшения, которые призваны максимизировать пользу и удовольствие, получаемые от процесса обучения.
+                                        <br>Также любой пользователь PythonMommy может предложить свои идеи, которые мы непременно рассмотрим!</h3>
+                                    <a class="main-post__link" href="#">
+                                        <span class="main-post__link-text">Присоединяйтесь! Будет интересно!</span>
+                                        <svg class="main-post__link-icon main-post__link-icon--arrow" width="37" height="12" viewBox="0 0 37 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </header>
+                
+
+
+                    <div class="posts-wrapper_hide-on-mobile">
+                        <article class="post post--active">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill"></div>
+                            </div>
+                            <header class="post__header">
+                            </header>
+                            <h2 class="post__title">Про учителя</h2>
+                        </article>
+                        <article class="post">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill"></div>
+                            </div>
+                            <header class="post__header">
+                            </header>
+                            <h2 class="post__title">О проверках</h2>
+                        </article>
+                        <article class="post">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill"></div>
+                            </div>
+                            <header class="post__header">
+                            </header>
+                            <h2 class="post__title">Об озвучке</h2>
+                        </article>
+                        <article class="post">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill"></div>
+                            </div>
+                            <header class="post__header">
+                            </header>
+                            <h2 class="post__title">О взаимодействии <br>с платформой</h2>
+                        </article>
+                        <article class="post">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill"></div>
+                            </div>
+                            <header class="post__header">
+                            </header>
+                            <h2 class="post__title">Об обновлениях</h2>
+                        </article>
+                    </div>
+                </div>
+                    <main></main>
+            </div>
+            <div class="thirdSection">
+                <div class="team" id="team">Наша команда</div>
+                <div class="cards">
+                    <div class="firstCard">
+                        <div class="cardText">
+                            <h2>Голубев Дмитрий</h2>
+                            <div class="baseText">Data Scientist, Backend Developer.</div>
+                            <br>
+                            <div class="myText">Реализация qa алгоритмов, 
+                                <br>подбор tts и speech recognition моделей. 
+                                <br>Разработка архитектуры проекта 
+                                <br>и написание Backend части сервиса
+                            </div>
+                            <a href="https://github.com/gerrenme" target="_blank">
+                                <div class="githubDima">
+                                    <img src="img/github.svg" alt="">
+                                    <p>Мой гитхаб</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="secondCard">
+                        <div class="cardText">
+                            <h2>Петрова Анна</h2>
+                            <div class="baseText">Frontend Developer</div>
+                            <br>
+                            <div class="myText">Воплощение в реальность самых разных 
+                                <br>сайтов от пустого листа без дизайна до
+                                <br>полностью работающего сайта с использованием HTML, CSS, JavaScript.
+                            </div>
+                            <div class="aps">
+                                <a href="https://github.com/Anna-good" target="_blank">
+                                    <div class="githubAnna">
+                                        <img src="img/github.svg" alt="">
+                                        <p>Мой гитхаб</p>
+                                    </div>
+                                </a>
+                                <a href="https://t.me/victarim" target="_blank">
+                                    <div class="tgAnna">
+                                        <img src="img/tg.svg" alt="">
+                                        <p>Мой тг</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js">
+        </script>
+    </body>
+    <footer>
+        <div id="contact">
+            <a href="https://t.me/python_mummy_bot" target="_blank">
+                <div class="ourTg">
+                    <img src="img/tgBlue.svg" alt="">
+                    <p>Наш телелеграмм бот</p>
+                </div>
+            </a>
+            <div class="mail">Наша почта для ваших предложенний: pythonmommy.dev@gmail.com</div>
+        </div>
+    </footer>
+</html>
